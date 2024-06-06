@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --text: #e9edef;
+  --background: #0f1315;
+  --primary: #adbac4;
+  --secondary: #454059;
+  --accent: #89759c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid var(--primary);
+  border-radius: 1.5rem;
+  padding: 2rem 4rem;
+  min-height: 50vh;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.calc div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.calc input,
+.calc select {
+  width: 100%;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.calc select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20%;
+  text-align: center;
+  height: 100%;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: var(--accent);
+  color: var(--text);
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--background);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  transition: 0.5s;
+}
+
+.btn:active {
+  border: 1px solid transparent;
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+#result {
+  margin-top: 2rem;
+  text-align: left;
+  color: var(--primary);
+}
+
+#result span {
+  display: block;
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
